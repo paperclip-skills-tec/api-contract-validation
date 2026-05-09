@@ -1,17 +1,6 @@
 ---
 name: api-contract-validation
-description: >
-  Validates that API response shapes match frontend expectations during code review.
-  Use this skill whenever you are reviewing or merging a PR that touches API route handlers,
-  API client files, error-handling paths, or SSE/streaming event shapes. Also invoke when
-  you're implementing a backend change that returns data to the frontend, adding or renaming
-  response fields, changing error objects, or refactoring a fetch utility. This skill catches
-  cross-layer contract drift — the class of bug where backend and frontend silently disagree
-  on field names, types, error shapes, or streaming event structure — before it reaches
-  production. Prior incidents (TEC-1578: plain-object errors broke all frontend error handling;
-  TEC-1372: stale test assertions missed a shape change; TEC-1559: SSE field rename broke RAG
-  streaming) all share this root cause. If the diff touches anything between a server response
-  and a frontend consumer, invoke this skill even if the change looks trivial.
+description: "Validates that API response shapes match frontend expectations during code review. Use this skill whenever you are reviewing or merging a PR that touches API route handlers, API client files, error-handling paths, or SSE/streaming event shapes. Also invoke when you're implementing a backend change that returns data to the frontend, adding or renaming response fields, changing error objects, or refactoring a fetch utility. This skill catches cross-layer contract drift — the class of bug where backend and frontend silently disagree on field names, types, error shapes, or streaming event structure — before it reaches production. Prior incidents (TEC-1578: plain-object errors broke all frontend error handling; TEC-1372: stale test assertions missed a shape change; TEC-1559: SSE field rename broke RAG streaming) all share this root cause. If the diff touches anything between a server response and a frontend consumer, invoke this skill even if the change looks trivial."
 ---
 
 # API Contract Validation
